@@ -1,0 +1,127 @@
+{
+  "basics": {
+    "name": "Atharva Tare",
+    "title": "Electrical Engineering Student & Graphic Designer",
+    "summary": "Freelancer | IEEE Student Branch Design Head | NSS Coordinator",
+    "location": "Nagpur, Maharashtra",
+    "email": "atharvatare3005@gmail.com",
+    "phone": "8010392112",
+    "links": [
+      {
+        "label": "LinkedIn Profile",
+        "url": "https://linkedin.com/in/atharvatare"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "IEEE S. B. Jain Student Branch",
+      "role": "Graphic & Design Head",
+      "dates": "June 2025 – Present",
+      "location": "Nagpur, India",
+      "bullets": [
+        "Leading the creative direction for campus-wide technical events.",
+        "Managing a team of student designers to produce high-impact digital and print assets."
+      ],
+      "impact_highlights": [
+        "Led creative direction for campus-wide technical events",
+        "Managed a team of student designers"
+      ]
+    }
+  ],
+  "internships": [
+    {
+      "company": "EV Power Train Architect: Design & Simulation",
+      "role": "Virtual Internship",
+      "dates": "Oct – Dec 2025",
+      "location": "Virtual",
+      "bullets": [
+        "Focused on architectural modeling and simulation of electric vehicle drive systems."
+      ]
+    },
+    {
+      "company": "Networking Virtual Internship",
+      "role": "Virtual Internship",
+      "dates": "April – June 2025",
+      "location": "Virtual",
+      "bullets": []
+    },
+    {
+      "company": "Digital Marketing Internship @ S2P Edutech",
+      "role": "Digital Marketing Intern",
+      "dates": "June – Aug 2024",
+      "location": "Nagpur, India",
+      "bullets": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "S.B. Jain Institute of Technology, Nagpur",
+      "degree": "B.Tech in Electrical Engineering",
+      "dates": "2023 – 2027",
+      "performance": "Academic Performance (CGPA): Sem I: 9.23 | Sem II: 9.27 | Sem III: 9.05 | Sem IV: 9.19 | Sem V: 9.15"
+    },
+    {
+      "institution": "Arya Junior College",
+      "degree": "Class 12 | Maharashtra State Board (Science)",
+      "dates": "2023",
+      "performance": "60.50%"
+    },
+    {
+      "institution": "Jindal Vidya Mandir Kalameshwar",
+      "degree": "Class 10 | CBSE",
+      "dates": "2021",
+      "performance": "75.60%"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Intravenous (IV) Drip Monitoring System",
+      "bullets": [
+        "Designed an IoT-based healthcare solution for real-time IV fluid tracking.",
+        "Integrated sensors to automate level detection, reducing manual nursing supervision and improving patient safety protocols."
+      ]
+    }
+  ],
+  "skills": {
+    "Engineering & Tech": [
+      "Python Programming",
+      "Web Development",
+      "EV Power Train Design",
+      "MATLAB / Simulation"
+    ],
+    "Design & Tools": [
+      "Canva (Expert)",
+      "UI/UX Fundamentals",
+      "Graphic Design",
+      "Prompt Engineering"
+    ]
+  },
+  "certifications": [
+    "GenAI Prompt Engineering",
+    "MS & LinkedIn GenAI Skills",
+    "Google Android Developer (AICTE)",
+    "Canva Visual Suite Specialist",
+    "Marketing with Canva"
+  ],
+  "achievements": [
+    {
+      "title": "Winner: Codeflex 2.0 Coding Hackathon",
+      "type": "wins"
+    },
+    {
+      "title": "Department Topper: Highest CGPA in Electrical Dept during 1st Year",
+      "type": "metrics"
+    },
+    {
+      "title": "Technical Speaker: Presented projects at Advantage Vidarbha 2026",
+      "type": "leadership"
+    }
+  ],
+  "leadership": [
+    "Secretary: ELAN Department Forum",
+    "Coordinator: National Service Scheme (NSS)",
+    "Member: Institution of Engineers India (IEI) Student Chapter"
+  ],
+  "extra": []
+}
