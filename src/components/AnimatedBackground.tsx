@@ -12,8 +12,8 @@ const AnimatedBackground: React.FC = () => {
 
     let animationFrameId: number;
     let particles: Particle[] = [];
-    const particleCount = window.innerWidth < 768 ? 40 : 100;
-    const connectionDistance = 150;
+    const particleCount = window.innerWidth < 768 ? 50 : 120;
+    const connectionDistance = 140;
     const mouse = { x: 0, y: 0, active: false };
 
     class Particle {
@@ -22,16 +22,33 @@ const AnimatedBackground: React.FC = () => {
       vx: number;
       vy: number;
       size: number;
+      hue: number;
 
       constructor() {
         this.x = Math.random() * canvas!.width;
         this.y = Math.random() * canvas!.height;
-        this.vx = (Math.random() - 0.5) * 0.5;
-        this.vy = (Math.random() - 0.5) * 0.5;
-        this.size = Math.random() * 2 + 1;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = (Math.random() - 0.5) * 0.4;
+        this.size = Math.random() * 2 + 0.5;
+        this.hue = Math.random() > 0.5 ? 199 : 38; // sky blue or amber
       }
 
       update() {
+        // Mouse attraction
+        if (mouse.active) {
+          const dx = mouse.x - this.x;
+          const dy = mouse.y - this.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 200) {
+            this.vx += (dx / dist) * 0.02;
+            this.vy += (dy / dist) * 0.02;
+          }
+        }
+
+        // Damping
+        this.vx *= 0.99;
+        this.vy *= 0.99;
+
         this.x += this.vx;
         this.y += this.vy;
 
@@ -43,7 +60,7 @@ const AnimatedBackground: React.FC = () => {
         if (!ctx) return;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+        ctx.fillStyle = `hsla(${this.hue}, 80%, 60%, 0.3)`;
         ctx.fill();
       }
     }
@@ -59,15 +76,26 @@ const AnimatedBackground: React.FC = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Draw subtle gradient mesh background
+
+      // Subtle gradient background
       const gradient = ctx.createRadialGradient(
-        canvas.width / 2, canvas.height / 2, 0,
-        canvas.width / 2, canvas.height / 2, canvas.width
+        canvas.width * 0.3, canvas.height * 0.3, 0,
+        canvas.width * 0.3, canvas.height * 0.3, canvas.width * 0.8
       );
-      gradient.addColorStop(0, '#0a0a0a');
+      gradient.addColorStop(0, 'rgba(14, 165, 233, 0.02)');
+      gradient.addColorStop(0.5, '#050505');
       gradient.addColorStop(1, '#000000');
       ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Second gradient for depth
+      const gradient2 = ctx.createRadialGradient(
+        canvas.width * 0.7, canvas.height * 0.7, 0,
+        canvas.width * 0.7, canvas.height * 0.7, canvas.width * 0.5
+      );
+      gradient2.addColorStop(0, 'rgba(245, 158, 11, 0.015)');
+      gradient2.addColorStop(1, 'transparent');
+      ctx.fillStyle = gradient2;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((p, i) => {
@@ -84,8 +112,10 @@ const AnimatedBackground: React.FC = () => {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            const opacity = (1 - dist / connectionDistance) * 0.1;
-            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
+            const opacity = (1 - dist / connectionDistance) * 0.12;
+            // Mix hues for connection color
+            const avgHue = (p.hue + p2.hue) / 2;
+            ctx.strokeStyle = `hsla(${avgHue}, 70%, 55%, ${opacity})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -105,15 +135,21 @@ const AnimatedBackground: React.FC = () => {
       mouse.active = true;
     };
 
+    const handleMouseLeave = () => {
+      mouse.active = false;
+    };
+
     window.addEventListener('resize', handleResize);
     window.addEventListener('mousemove', handleMouseMove);
-    
+    window.addEventListener('mouseleave', handleMouseLeave);
+
     init();
     animate();
 
     return () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseleave', handleMouseLeave);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
@@ -122,7 +158,7 @@ const AnimatedBackground: React.FC = () => {
     <canvas
       ref={canvasRef}
       className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
-      style={{ background: '#0a0a0a' }}
+      style={{ background: '#050505' }}
     />
   );
 };

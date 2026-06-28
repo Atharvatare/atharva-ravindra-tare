@@ -1,81 +1,69 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 
-const SplashScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
+interface SplashScreenProps {
+  onComplete: () => void;
+}
+
+const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const duration = 1500; // 1.5s
-    const interval = 10;
-    const step = 100 / (duration / interval);
-    
+    const duration = 1500;
+    const intervalTime = 15;
+    const steps = duration / intervalTime;
+    let currentStep = 0;
+
     const timer = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(timer);
-          setTimeout(onComplete, 300);
-          return 100;
-        }
-        return prev + step;
-      });
-    }, interval);
+      currentStep++;
+      setProgress(Math.min((currentStep / steps) * 100, 100));
+      
+      if (currentStep >= steps) {
+        clearInterval(timer);
+        setTimeout(onComplete, 300);
+      }
+    }, intervalTime);
 
     return () => clearInterval(timer);
   }, [onComplete]);
 
   return (
-    <motion.div
-      initial={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black"
-    >
+    <div className="fixed inset-0 z-[100] bg-black flex flex-col items-center justify-center overflow-hidden">
       <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="mb-8"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        className="relative mb-8"
       >
-        <div className="relative w-24 h-24 flex items-center justify-center border-2 border-white/20 rounded-2xl overflow-hidden">
-          <motion.div
-            initial={{ y: 100 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.8, ease: "circOut" }}
-            className="text-4xl font-bold tracking-tighter text-white"
-          >
-            AT
-          </motion.div>
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent"
-            animate={{
-              rotate: [0, 360],
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
+        <div className="absolute inset-0 bg-sky-500 blur-[80px] opacity-20 rounded-full" />
+        <div className="relative text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-amber-400 tracking-tighter">
+          AT
         </div>
       </motion.div>
 
-      <div className="w-48 h-1 bg-white/10 rounded-full overflow-hidden">
-        <motion.div
-          className="h-full bg-white"
-          initial={{ width: 0 }}
-          animate={{ width: `${progress}%` }}
-          transition={{ ease: "linear" }}
-        />
+      <div className="w-64 max-w-[80vw] mb-8 relative">
+        <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+          <motion.div
+            className="h-full bg-gradient-to-r from-sky-500 to-amber-500"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
       </div>
-      
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.5 }}
-        className="mt-4 text-[10px] uppercase tracking-[0.3em] text-white font-mono"
+
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className="flex flex-col items-center"
       >
-        Initializing Portfolio
-      </motion.p>
-    </motion.div>
+        <h1 className="text-white text-xl md:text-2xl font-semibold tracking-widest uppercase mb-2">
+          Atharva Ravindra Tare
+        </h1>
+        <p className="text-sky-400/80 text-xs md:text-sm tracking-[0.2em] uppercase font-mono text-center px-4">
+          Electrical Engineer &bull; Developer &bull; Designer
+        </p>
+      </motion.div>
+    </div>
   );
 };
 

@@ -1,49 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import { AnimatePresence } from 'motion/react';
+import React, { useState } from 'react';
 import SplashScreen from './components/SplashScreen';
 import AnimatedBackground from './components/AnimatedBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
-import Projects from './components/Projects';
 import Footer from './components/Footer';
 
-export default function App() {
-  const [loading, setLoading] = useState(true);
+function App() {
+  const [showSplash, setShowSplash] = useState(true);
 
-  useEffect(() => {
-    // Prevent scrolling while loading
-    if (loading) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [loading]);
+  if (showSplash) {
+    return <SplashScreen onComplete={() => setShowSplash(false)} />;
+  }
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
-      <AnimatePresence mode="wait">
-        {loading && <SplashScreen onComplete={() => setLoading(false)} />}
-      </AnimatePresence>
+    <div className="relative w-full overflow-x-hidden selection:bg-sky-500 selection:text-white">
+      <AnimatedBackground />
+      <Navbar />
+      
+      <main className="relative z-10 pt-16">
+        <Hero />
+        <Experience />
+        <Achievements />
+        <Projects />
+        <Skills />
+        <Education />
+      </main>
 
-      {!loading && (
-        <>
-          <AnimatedBackground />
-          <Navbar />
-          <main>
-            <Hero />
-            <Experience />
-            <Achievements />
-            <Projects />
-            <Skills />
-            <Education />
-          </main>
-          <Footer />
-        </>
-      )}
+      <Footer />
     </div>
   );
 }
+
+export default App;

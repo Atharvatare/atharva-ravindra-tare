@@ -1,15 +1,23 @@
 {
   "basics": {
-    "name": "Atharva Tare",
-    "title": "Electrical Engineering Student & Graphic Designer",
-    "summary": "Freelancer | IEEE Student Branch Design Head | NSS Coordinator",
+    "name": "Atharva Ravindra Tare",
+    "shortName": "Atharva Tare",
+    "title": "Electrical Engineering Student | Full-Stack Developer | Graphic Designer",
+    "roles": ["Electrical Engineer", "Full-Stack Developer", "Graphic Designer", "IoT Innovator"],
+    "summary": "Final Year B.Tech EE @ SBJ Institute of Technology, Nagpur | IEEE Design Head | Freelancer | NSS Coordinator",
     "location": "Nagpur, Maharashtra",
     "email": "atharvatare3005@gmail.com",
     "phone": "8010392112",
     "links": [
       {
-        "label": "LinkedIn Profile",
-        "url": "https://linkedin.com/in/atharvatare"
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/atharva-tare-68331028b",
+        "icon": "linkedin"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Atharvatare",
+        "icon": "github"
       }
     ]
   },
@@ -20,12 +28,14 @@
       "dates": "June 2025 – Present",
       "location": "Nagpur, India",
       "bullets": [
-        "Leading the creative direction for campus-wide technical events.",
-        "Managing a team of student designers to produce high-impact digital and print assets."
+        "Leading the creative direction for campus-wide technical events and workshops.",
+        "Managing a team of student designers to produce high-impact digital and print assets.",
+        "Spearheading brand identity for IEEE events reaching 500+ students."
       ],
       "impact_highlights": [
         "Led creative direction for campus-wide technical events",
-        "Managed a team of student designers"
+        "Managed a team of student designers",
+        "Created branding for 10+ IEEE events"
       ]
     }
   ],
@@ -36,7 +46,9 @@
       "dates": "Oct – Dec 2025",
       "location": "Virtual",
       "bullets": [
-        "Focused on architectural modeling and simulation of electric vehicle drive systems."
+        "Focused on architectural modeling and simulation of electric vehicle drive systems.",
+        "Designed and analyzed power train topologies using MATLAB/Simulink.",
+        "Studied regenerative braking systems and battery management for EVs."
       ]
     },
     {
@@ -44,22 +56,31 @@
       "role": "Virtual Internship",
       "dates": "April – June 2025",
       "location": "Virtual",
-      "bullets": []
+      "bullets": [
+        "Completed hands-on training in computer networking fundamentals.",
+        "Configured network protocols, routing, and switching architectures.",
+        "Gained proficiency in network security and troubleshooting."
+      ]
     },
     {
-      "company": "Digital Marketing Internship @ S2P Edutech",
+      "company": "S2P Edutech",
       "role": "Digital Marketing Intern",
       "dates": "June – Aug 2024",
       "location": "Nagpur, India",
-      "bullets": []
+      "bullets": [
+        "Developed and executed social media marketing campaigns.",
+        "Created engaging content for multiple digital platforms.",
+        "Analyzed campaign metrics to optimize reach and engagement."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "S.B. Jain Institute of Technology, Nagpur",
+      "institution": "S.B. Jain Institute of Technology, Management & Research",
       "degree": "B.Tech in Electrical Engineering",
       "dates": "2023 – 2027",
-      "performance": "Academic Performance (CGPA): Sem I: 9.23 | Sem II: 9.27 | Sem III: 9.05 | Sem IV: 9.19 | Sem V: 9.15"
+      "performance": "Academic Performance (CGPA): Sem I: 9.23 | Sem II: 9.27 | Sem III: 9.05 | Sem IV: 9.19 | Sem V: 9.15",
+      "cgpaData": [9.23, 9.27, 9.05, 9.19, 9.15]
     },
     {
       "institution": "Arya Junior College",
@@ -74,27 +95,164 @@
       "performance": "75.60%"
     }
   ],
-  "projects": [
-    {
-      "title": "Smart Intravenous (IV) Drip Monitoring System",
-      "bullets": [
-        "Designed an IoT-based healthcare solution for real-time IV fluid tracking.",
-        "Integrated sensors to automate level detection, reducing manual nursing supervision and improving patient safety protocols."
-      ]
-    }
-  ],
-  "skills": {
-    "Engineering & Tech": [
-      "Python Programming",
-      "Web Development",
-      "EV Power Train Design",
-      "MATLAB / Simulation"
+  "projects": {
+    "software": [
+      {
+        "title": "Solar Bharat",
+        "description": "A comprehensive solar energy awareness and calculation platform for India, promoting sustainable energy adoption across the country.",
+        "tech": ["React", "JavaScript", "CSS", "API Integration"],
+        "category": "software",
+        "github": "https://github.com/Atharvatare/Solar-Bharat",
+        "bullets": [
+          "Built a full-stack web platform for solar energy awareness and adoption in India.",
+          "Integrated solar potential calculation tools for different Indian regions.",
+          "Designed user-friendly interfaces for energy savings estimation."
+        ]
+      },
+      {
+        "title": "Smart IV Drip Monitoring System",
+        "description": "An IoT-based healthcare solution for real-time intravenous fluid tracking to reduce manual nursing supervision.",
+        "tech": ["Arduino", "IoT Sensors", "C++", "LCD Display"],
+        "category": "iot",
+        "github": "https://github.com/Atharvatare/Smart-IV-Drip-Monitoring-System",
+        "bullets": [
+          "Designed an IoT-based healthcare solution for real-time IV fluid tracking.",
+          "Integrated sensors to automate level detection with buzzer alert system.",
+          "Reduced manual nursing supervision needs and improved patient safety protocols."
+        ]
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "This very portfolio — a futuristic, animated personal website built with React, TypeScript, and Framer Motion.",
+        "tech": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
+        "category": "software",
+        "github": "https://github.com/Atharvatare/atharva-ravindra-tare",
+        "live": "https://atharva-ravindra-tare.vercel.app/",
+        "bullets": [
+          "Designed and developed a premium animated portfolio from scratch.",
+          "Implemented particle background, smooth scroll navigation, and responsive design.",
+          "Deployed on Vercel with continuous deployment from GitHub."
+        ]
+      },
+      {
+        "title": "Digital Clock",
+        "description": "A sleek digital clock web application with real-time display and modern UI design.",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "category": "software",
+        "github": "https://github.com/Atharvatare/Digital-Clock",
+        "bullets": [
+          "Built a responsive digital clock with real-time updates.",
+          "Implemented modern UI with smooth animations and clean typography.",
+          "Used vanilla JavaScript for precise time calculations."
+        ]
+      },
+      {
+        "title": "Netflix Login Page Clone",
+        "description": "A pixel-perfect recreation of the Netflix login page with responsive design and form validation.",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "category": "software",
+        "github": "https://github.com/Atharvatare/Netflix-Login-page",
+        "bullets": [
+          "Recreated Netflix's login interface with pixel-perfect accuracy.",
+          "Implemented responsive design for all screen sizes.",
+          "Added form validation and interactive UI elements."
+        ]
+      }
     ],
-    "Design & Tools": [
+    "hardware": [
+      {
+        "title": "IoT-Based Temperature Monitoring System",
+        "description": "A real-time industrial temperature monitoring system using DHT22 sensor with automated alerts and data logging.",
+        "tech": ["Arduino Uno", "DHT22 Sensor", "ESP8266 WiFi", "16x2 LCD", "Buzzer"],
+        "category": "hardware",
+        "complexity": "intermediate",
+        "bullets": [
+          "Designed a real-time temperature and humidity monitoring system using DHT22 sensor.",
+          "Implemented threshold-based buzzer alarm for overtemperature protection.",
+          "Integrated ESP8266 WiFi module for remote monitoring via web dashboard.",
+          "Added 16x2 LCD display for local temperature readout."
+        ],
+        "components": ["Arduino Uno", "DHT22 Sensor", "ESP8266", "16x2 LCD", "Buzzer", "Resistors", "Breadboard"]
+      },
+      {
+        "title": "Automated Water Pump Controller",
+        "description": "An intelligent water level sensing and automatic pump control system for overhead tank management.",
+        "tech": ["Arduino Nano", "Ultrasonic Sensor", "Relay Module", "12V Motor", "LED Indicators"],
+        "category": "hardware",
+        "complexity": "intermediate",
+        "bullets": [
+          "Built an automatic water level detection system using HC-SR04 ultrasonic sensor.",
+          "Implemented relay-based motor control to automate pump ON/OFF based on water level.",
+          "Added LED indicator panel showing LOW / MEDIUM / FULL tank status.",
+          "Designed fail-safe dry-run protection to prevent motor damage."
+        ],
+        "components": ["Arduino Nano", "HC-SR04 Ultrasonic", "5V Relay Module", "12V DC Motor", "LEDs", "Power Supply"]
+      },
+      {
+        "title": "PWM Solar Charge Controller",
+        "description": "A pulse-width modulation based solar charge controller for 12V lead-acid battery with overcharge and deep-discharge protection.",
+        "tech": ["ATmega328P", "MOSFET IRF540N", "Voltage Divider", "Current Sensor", "LCD"],
+        "category": "hardware",
+        "complexity": "advanced",
+        "bullets": [
+          "Designed a PWM-based solar charge controller for 12V battery systems.",
+          "Implemented overcharge protection with MOSFET switching at 14.4V cutoff.",
+          "Added deep-discharge protection to extend battery lifespan.",
+          "Built real-time voltage and current monitoring with 16x2 LCD display."
+        ],
+        "components": ["ATmega328P", "MOSFET IRF540N", "ACS712 Current Sensor", "Voltage Divider", "16x2 LCD", "Solar Panel 12V"]
+      },
+      {
+        "title": "Smart Energy Meter with IoT Dashboard",
+        "description": "A real-time electrical energy consumption monitoring system with IoT-enabled web dashboard for tracking power usage and costs.",
+        "tech": ["ESP32", "ACS712 Current Sensor", "ZMPT101B Voltage Sensor", "OLED Display", "ThingSpeak"],
+        "category": "iot",
+        "complexity": "advanced",
+        "bullets": [
+          "Developed an IoT-based energy metering system measuring real-time voltage, current, and power.",
+          "Integrated ACS712 current sensor and ZMPT101B voltage transformer for accurate readings.",
+          "Built a ThingSpeak cloud dashboard for remote monitoring and historical data analysis.",
+          "Added OLED display for local real-time power consumption readout in kWh."
+        ],
+        "components": ["ESP32", "ACS712 Current Sensor", "ZMPT101B Voltage Sensor", "0.96\" OLED", "Relay Module"]
+      }
+    ]
+  },
+  "skills": {
+    "Programming & Web": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "HTML5 / CSS3",
+      "React.js",
+      "Node.js",
+      "Vite",
+      "Tailwind CSS"
+    ],
+    "Electrical & Hardware": [
+      "Arduino / ESP32",
+      "MATLAB / Simulink",
+      "EV Power Train Design",
+      "IoT Sensor Integration",
+      "Circuit Design",
+      "PCB Basics",
+      "Embedded C/C++"
+    ],
+    "Design & Creative": [
       "Canva (Expert)",
-      "UI/UX Fundamentals",
       "Graphic Design",
+      "UI/UX Fundamentals",
+      "Video Editing",
+      "Brand Identity Design",
       "Prompt Engineering"
+    ],
+    "Tools & Platforms": [
+      "Git / GitHub",
+      "VS Code",
+      "Vercel",
+      "ThingSpeak IoT",
+      "Linux Basics",
+      "Digital Marketing"
     ]
   },
   "certifications": [
@@ -102,19 +260,28 @@
     "MS & LinkedIn GenAI Skills",
     "Google Android Developer (AICTE)",
     "Canva Visual Suite Specialist",
-    "Marketing with Canva"
+    "Marketing with Canva",
+    "EV Power Train Design & Simulation"
   ],
   "achievements": [
     {
       "title": "Winner: Codeflex 2.0 Coding Hackathon",
+      "description": "Won the competitive coding hackathon demonstrating problem-solving and coding skills under pressure.",
       "type": "wins"
     },
     {
-      "title": "Department Topper: Highest CGPA in Electrical Dept during 1st Year",
+      "title": "Department Topper: Highest CGPA in Electrical Engineering (1st Year)",
+      "description": "Achieved the highest CGPA of 9.27 in the entire Electrical Engineering department during the first academic year.",
       "type": "metrics"
     },
     {
-      "title": "Technical Speaker: Presented projects at Advantage Vidarbha 2026",
+      "title": "Technical Speaker: Advantage Vidarbha 2026",
+      "description": "Presented technical projects and research at the prestigious Advantage Vidarbha 2026 conference.",
+      "type": "leadership"
+    },
+    {
+      "title": "IQAC Student Representative",
+      "description": "Selected as Electrical Engineering (V Semester) student representative on the college's Internal Quality Assurance Cell.",
       "type": "leadership"
     }
   ],
@@ -123,5 +290,11 @@
     "Coordinator: National Service Scheme (NSS)",
     "Member: Institution of Engineers India (IEI) Student Chapter"
   ],
-  "extra": []
+  "stats": {
+    "cgpa": "9.27",
+    "deptRank": "1st",
+    "projects": "10+",
+    "githubRepos": "12",
+    "speakerYear": "2026"
+  }
 }
