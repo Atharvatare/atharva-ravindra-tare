@@ -62,8 +62,8 @@
       "institution": "S.B. Jain Institute of Technology, Management & Research",
       "degree": "B.Tech in Electrical Engineering",
       "dates": "2023 – 2027",
-      "performance": "Academic Performance (CGPA): Sem I: 9.23 | Sem II: 9.27 | Sem III: 9.05 | Sem IV: 9.19 | Sem V: 9.15",
-      "cgpaData": [9.23, 9.27, 9.05, 9.19, 9.15]
+      "performance": "Academic Performance (CGPA): Sem I: 9.23 | Sem II: 9.27 | Sem III: 9.05 | Sem IV: 9.19 | Sem V: 9.15 | Sem VI: 9.18",
+      "cgpaData": [9.23, 9.27, 9.05, 9.19, 9.15, 9.18]
     },
     {
       "institution": "Arya Junior College",
@@ -112,7 +112,8 @@
         "bullets": [
           "Designed an IoT-based healthcare solution for real-time IV fluid tracking.",
           "Integrated sensors to automate level detection with buzzer alert system.",
-          "Reduced manual nursing supervision needs and improved patient safety protocols."
+          "Reduced manual nursing supervision needs and improved patient safety protocols.",
+          "Presented this project in Avishkar 2026, held at RTMNU, Nagpur."
         ]
       },
       {
@@ -290,8 +291,8 @@
       "type": "wins"
     },
     {
-      "title": "Department Topper: Highest CGPA in Electrical Engineering (1st Year)",
-      "description": "Achieved the highest CGPA of 9.27 in the entire Electrical Engineering department during the first academic year.",
+      "title": "Consistent Department Topper",
+      "description": "Consistently ranked 1st in the Electrical Engineering department since the first academic year, maintaining a top-tier CGPA.",
       "type": "metrics"
     },
     {
@@ -329,7 +330,7 @@
     }
   ],
   "stats": {
-    "cgpa": "9.27",
+    "cgpa": "9.18",
     "deptRank": "1st",
     "projects": "10+",
     "githubRepos": "12",

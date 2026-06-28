@@ -117,10 +117,10 @@ const Education: React.FC = () => {
             <div className="relative z-10">
               <div className="flex items-center gap-2 text-sky-400 font-bold mb-2">
                 <Award size={18} />
-                Department Topper
+                Consistent Department Topper
               </div>
               <p className="text-white/70 text-sm">
-                Achieved the highest CGPA of 9.27 in the Electrical Engineering department during the first academic year.
+                Consistently ranked 1st in the Electrical Engineering department since the first academic year, maintaining a top-tier CGPA.
               </p>
             </div>
           </motion.div>
