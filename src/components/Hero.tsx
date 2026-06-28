@@ -75,12 +75,13 @@ const Hero: React.FC = () => {
             >
               View My Work <ArrowRight size={18} />
             </button>
-            <button
-              onClick={() => window.print()}
+            <a
+              href="/resume.pdf"
+              download="Atharva_Tare_Resume.pdf"
               className="px-8 py-4 bg-transparent border border-white/20 text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-white/5 transition-colors"
             >
               Download Resume <Download size={18} />
-            </button>
+            </a>
           </div>
           
           <div className="flex items-center gap-4 mt-12">
