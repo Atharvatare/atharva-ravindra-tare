@@ -4,7 +4,6 @@ import { Menu, X, Home, Briefcase, Award, Code, User, GraduationCap, Github, Boo
 
 const navItems = [
   { label: 'Home', href: '#home', icon: Home },
-  { label: 'Experience', href: '#experience', icon: Briefcase },
   { label: 'Achievements', href: '#achievements', icon: Award },
   { label: 'Projects', href: '#projects', icon: Code },
   { label: 'Skills', href: '#skills', icon: User },

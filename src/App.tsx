@@ -26,7 +26,6 @@ function App() {
       
       <main className="relative z-10 pt-16">
         <Hero />
-        <Experience />
         <Achievements />
         <Projects />
         <Skills />
