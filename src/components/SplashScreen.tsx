@@ -57,7 +57,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
         className="flex flex-col items-center"
       >
         <h1 className="text-white text-xl md:text-2xl font-semibold tracking-widest uppercase mb-2">
-          Atharva Ravindra Tare
+          Atharva Tare
         </h1>
         <p className="text-sky-400/80 text-xs md:text-sm tracking-[0.2em] uppercase font-mono text-center px-4">
           Electrical Engineer &bull; Developer &bull; Designer

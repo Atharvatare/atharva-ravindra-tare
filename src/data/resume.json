@@ -306,10 +306,27 @@
     }
   ],
   "leadership": [
+    "Class Representative: Electrical Engineering",
     "Graphic & Design Head: IEEE S. B. Jain Student Branch",
     "Secretary: ELAN Department Forum",
     "Coordinator: National Service Scheme (NSS)",
     "Member: Institution of Engineers India (IEI) Student Chapter"
+  ],
+  "blog": [
+    {
+      "title": "Architecting EV Power Trains for the Future",
+      "date": "Dec 15, 2025",
+      "readTime": "5 min read",
+      "excerpt": "A deep dive into the simulation and topology design of modern electric vehicle drive systems.",
+      "link": "#"
+    },
+    {
+      "title": "Building Scalable IoT Home Automation",
+      "date": "Aug 22, 2025",
+      "readTime": "4 min read",
+      "excerpt": "How to leverage ESP8266 and Blynk to build a robust and safe home automation network.",
+      "link": "#"
+    }
   ],
   "stats": {
     "cgpa": "9.27",
