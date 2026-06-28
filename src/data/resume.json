@@ -23,24 +23,6 @@
   },
   "experience": [
     {
-      "company": "IEEE S. B. Jain Student Branch",
-      "role": "Graphic & Design Head",
-      "dates": "June 2025 – Present",
-      "location": "Nagpur, India",
-      "bullets": [
-        "Leading the creative direction for campus-wide technical events and workshops.",
-        "Managing a team of student designers to produce high-impact digital and print assets.",
-        "Spearheading brand identity for IEEE events reaching 500+ students."
-      ],
-      "impact_highlights": [
-        "Led creative direction for campus-wide technical events",
-        "Managed a team of student designers",
-        "Created branding for 10+ IEEE events"
-      ]
-    }
-  ],
-  "internships": [
-    {
       "company": "EV Power Train Architect: Design & Simulation",
       "role": "Virtual Internship",
       "dates": "Oct – Dec 2025",
@@ -74,6 +56,7 @@
       ]
     }
   ],
+  "internships": [],
   "education": [
     {
       "institution": "S.B. Jain Institute of Technology, Management & Research",
@@ -98,7 +81,7 @@
   "projects": {
     "software": [
       {
-        "title": "Solar Bharat",
+        "title": "Solar-Bharat",
         "description": "A comprehensive solar energy awareness and calculation platform for India, promoting sustainable energy adoption across the country.",
         "tech": ["React", "JavaScript", "CSS", "API Integration"],
         "category": "software",
@@ -110,7 +93,18 @@
         ]
       },
       {
-        "title": "Smart IV Drip Monitoring System",
+        "title": "Go-Bharat-EV",
+        "description": "An electric vehicle related platform or architectural design project focusing on EV adoption and systems.",
+        "tech": ["MATLAB", "Simulink", "EV Architecture"],
+        "category": "software",
+        "github": "https://github.com/Atharvatare/Go-Bharat-EV",
+        "bullets": [
+          "Designed and analyzed EV power train topologies.",
+          "Worked on architectural modeling and simulation of electric vehicle drive systems."
+        ]
+      },
+      {
+        "title": "Smart-IV-Drip-Monitoring-System",
         "description": "An IoT-based healthcare solution for real-time intravenous fluid tracking to reduce manual nursing supervision.",
         "tech": ["Arduino", "IoT Sensors", "C++", "LCD Display"],
         "category": "iot",
@@ -122,7 +116,7 @@
         ]
       },
       {
-        "title": "Portfolio Website",
+        "title": "atharva-ravindra-tare",
         "description": "This very portfolio — a futuristic, animated personal website built with React, TypeScript, and Framer Motion.",
         "tech": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
         "category": "software",
@@ -135,7 +129,7 @@
         ]
       },
       {
-        "title": "Digital Clock",
+        "title": "Digital-Clock",
         "description": "A sleek digital clock web application with real-time display and modern UI design.",
         "tech": ["HTML", "CSS", "JavaScript"],
         "category": "software",
@@ -147,7 +141,7 @@
         ]
       },
       {
-        "title": "Netflix Login Page Clone",
+        "title": "Netflix-Login-page",
         "description": "A pixel-perfect recreation of the Netflix login page with responsive design and form validation.",
         "tech": ["HTML", "CSS", "JavaScript"],
         "category": "software",
@@ -161,7 +155,7 @@
     ],
     "hardware": [
       {
-        "title": "IoT-Based Temperature Monitoring System",
+        "title": "IoT-Based-Temperature-Monitoring-System",
         "description": "A real-time industrial temperature monitoring system using DHT22 sensor with automated alerts and data logging.",
         "tech": ["Arduino Uno", "DHT22 Sensor", "ESP8266 WiFi", "16x2 LCD", "Buzzer"],
         "category": "hardware",
@@ -175,7 +169,7 @@
         "components": ["Arduino Uno", "DHT22 Sensor", "ESP8266", "16x2 LCD", "Buzzer", "Resistors", "Breadboard"]
       },
       {
-        "title": "Automated Water Pump Controller",
+        "title": "Automated-Water-Pump-Controller",
         "description": "An intelligent water level sensing and automatic pump control system for overhead tank management.",
         "tech": ["Arduino Nano", "Ultrasonic Sensor", "Relay Module", "12V Motor", "LED Indicators"],
         "category": "hardware",
@@ -189,7 +183,7 @@
         "components": ["Arduino Nano", "HC-SR04 Ultrasonic", "5V Relay Module", "12V DC Motor", "LEDs", "Power Supply"]
       },
       {
-        "title": "PWM Solar Charge Controller",
+        "title": "PWM-Solar-Charge-Controller",
         "description": "A pulse-width modulation based solar charge controller for 12V lead-acid battery with overcharge and deep-discharge protection.",
         "tech": ["ATmega328P", "MOSFET IRF540N", "Voltage Divider", "Current Sensor", "LCD"],
         "category": "hardware",
@@ -203,7 +197,7 @@
         "components": ["ATmega328P", "MOSFET IRF540N", "ACS712 Current Sensor", "Voltage Divider", "16x2 LCD", "Solar Panel 12V"]
       },
       {
-        "title": "Smart Energy Meter with IoT Dashboard",
+        "title": "Smart-Energy-Meter",
         "description": "A real-time electrical energy consumption monitoring system with IoT-enabled web dashboard for tracking power usage and costs.",
         "tech": ["ESP32", "ACS712 Current Sensor", "ZMPT101B Voltage Sensor", "OLED Display", "ThingSpeak"],
         "category": "iot",
@@ -286,6 +280,7 @@
     }
   ],
   "leadership": [
+    "Graphic & Design Head: IEEE S. B. Jain Student Branch",
     "Secretary: ELAN Department Forum",
     "Coordinator: National Service Scheme (NSS)",
     "Member: Institution of Engineers India (IEI) Student Chapter"

@@ -93,10 +93,10 @@ const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<FilterKey>('all');
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  // Merge both arrays, tagging the source
+  // Merge both arrays, tagging the source. Hardware first as requested.
   const allProjects: Project[] = [
-    ...resumeData.projects.software.map((p) => ({ ...p, _source: 'software' as const })),
     ...resumeData.projects.hardware.map((p) => ({ ...p, _source: 'hardware' as const })),
+    ...resumeData.projects.software.map((p) => ({ ...p, _source: 'software' as const })),
   ];
 
   const filtered =
