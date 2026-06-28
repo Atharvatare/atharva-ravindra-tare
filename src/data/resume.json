@@ -156,6 +156,20 @@
     ],
     "hardware": [
       {
+        "title": "Three-Phase-Motor-Control-Circuit (Copyright Filed)",
+        "description": "A formally copyrighted industrial control circuit featuring Hand–Off–Auto selector integration and pressure switch automation for three-phase motors.",
+        "tech": ["HOA Selector", "Pressure Switch", "Contactor", "Overload Relay", "Transformer"],
+        "category": "hardware",
+        "complexity": "advanced",
+        "bullets": [
+          "Authored and filed a copyright for this industrial motor control system design.",
+          "Engineered manual and automatic mode operations using an HOA selector switch.",
+          "Integrated an overload relay for thermal protection and a contactor for high-power switching.",
+          "Implemented pressure-based automatic state transitions for safe and reliable motor operations."
+        ],
+        "components": ["HOA Selector", "Contactor", "Overload Relay", "Pressure Switch", "Control Transformer"]
+      },
+      {
         "title": "IoT-Based-Temperature-Monitoring-System",
         "description": "A real-time industrial temperature monitoring system using DHT22 sensor with automated alerts and data logging.",
         "tech": ["Arduino Uno", "DHT22 Sensor", "ESP8266 WiFi", "16x2 LCD", "Buzzer"],
@@ -285,6 +299,11 @@
     "EV Power Train Design & Simulation"
   ],
   "achievements": [
+    {
+      "title": "Filed Copyright: Motor Control Circuit",
+      "description": "Authored and successfully filed a copyright for an industrial 'Three-Phase Motor Control Circuit with Hand–Off–Auto Selector and Pressure Switch'.",
+      "type": "wins"
+    },
     {
       "title": "Winner: Codeflex 2.0 Coding Hackathon",
       "description": "Won the competitive coding hackathon demonstrating problem-solving and coding skills under pressure.",
