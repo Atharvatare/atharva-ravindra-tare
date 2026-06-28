@@ -139,14 +139,14 @@ const Achievements: React.FC = () => {
             <div className="text-center">
               <AnimatedCounter target={stats.cgpa} />
               <div className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-mono">
-                Highest CGPA
+                Current CGPA
               </div>
             </div>
             <div className="w-[1px] h-8 bg-white/10 hidden md:block" />
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stats.deptRank}</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-mono">
-                Dept Rank
+                Class Rank
               </div>
             </div>
             <div className="w-[1px] h-8 bg-white/10 hidden md:block" />

@@ -117,10 +117,10 @@ const Education: React.FC = () => {
             <div className="relative z-10">
               <div className="flex items-center gap-2 text-sky-400 font-bold mb-2">
                 <Award size={18} />
-                Consistent Department Topper
+                Academic Excellence
               </div>
               <p className="text-white/70 text-sm">
-                Consistently ranked 1st in the Electrical Engineering department since the first academic year, maintaining a top-tier CGPA.
+                Passionate about Electrical Engineering, maintaining strong academic performance and consistently leading the class in technical subjects.
               </p>
             </div>
           </motion.div>
