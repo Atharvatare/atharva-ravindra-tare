@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Linkedin, Github, Download, ArrowRight } from 'lucide-react';
 import resumeData from '../data/resume.json';
-import Hero3DModel from './Hero3DModel';
 
 const Hero: React.FC = () => {
   const { basics } = resumeData;
@@ -106,10 +105,12 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="hidden lg:flex justify-center relative w-full h-[500px]"
+          className="hidden lg:flex justify-center items-center relative w-full h-[500px]"
         >
-          <div className="absolute inset-0 bg-gradient-to-tr from-sky-500/10 to-amber-500/10 blur-[100px] rounded-full pointer-events-none" />
-          <Hero3DModel />
+          <div className="absolute inset-0 bg-gradient-to-tr from-sky-500/20 to-amber-500/20 blur-[100px] rounded-full pointer-events-none" />
+          <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full border-[4px] border-white/10 p-2 overflow-hidden bg-white/5 backdrop-blur-sm z-10">
+            <img src="/profile.jpeg" alt="Atharva Tare" className="w-full h-full object-cover rounded-full" />
+          </div>
         </motion.div>
       </div>
       
