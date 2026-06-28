@@ -183,6 +183,32 @@
         "components": ["Arduino Nano", "HC-SR04 Ultrasonic", "5V Relay Module", "12V DC Motor", "LEDs", "Power Supply"]
       },
       {
+        "title": "Smart-Home-Automation-System",
+        "description": "An IoT-based central automation hub controlling home appliances over WiFi with real-time status updates.",
+        "tech": ["NodeMCU ESP8266", "Relay Module", "Blynk App", "C++"],
+        "category": "iot",
+        "complexity": "intermediate",
+        "bullets": [
+          "Developed an IoT automation hub using NodeMCU to control multiple home appliances via WiFi.",
+          "Integrated the Blynk platform for mobile application control and real-time status monitoring.",
+          "Designed a modular relay switching circuit ensuring safe isolation for high-voltage appliances."
+        ],
+        "components": ["ESP8266 NodeMCU", "4-Channel Relay", "Jumper Wires", "Breadboard", "AC Appliances"]
+      },
+      {
+        "title": "RFID-Based-Smart-Attendance",
+        "description": "An automated IoT attendance logging system using RFID tags and a cloud database to track entries.",
+        "tech": ["Arduino Uno", "MFRC522 RFID", "ESP8266", "Google Sheets API"],
+        "category": "iot",
+        "complexity": "intermediate",
+        "bullets": [
+          "Engineered an automated attendance system scanning passive RFID tags for secure access logging.",
+          "Interfaced an ESP8266 Wi-Fi module to push timestamped attendance data directly to Google Sheets via API.",
+          "Implemented LED and buzzer feedback mechanisms for successful and denied access attempts."
+        ],
+        "components": ["Arduino Uno", "RC522 RFID Reader", "ESP8266", "Buzzer", "LEDs"]
+      },
+      {
         "title": "PWM-Solar-Charge-Controller",
         "description": "A pulse-width modulation based solar charge controller for 12V lead-acid battery with overcharge and deep-discharge protection.",
         "tech": ["ATmega328P", "MOSFET IRF540N", "Voltage Divider", "Current Sensor", "LCD"],
