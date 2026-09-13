@@ -18,7 +18,8 @@
 - **Dynamic Animations:** Powered by `framer-motion` for buttery-smooth scroll reveals, staggering list items, layout animations, and an animated custom splash screen.
 - **Interactive Background:** A custom-built HTML5 Canvas particle network that connects nodes and subtly reacts to mouse movements.
 - **Data-Driven Architecture:** The entire website's content is fed from a single source of truth (`src/data/resume.json`), making updates seamless without touching the React components.
-- **Advanced Project Filtering:** Projects are categorized and filterable by `Software`, `Hardware`, and `IoT`, complete with complexity badges and expandable tech stacks.
+- **Dedicated Project Sections:** Projects are neatly separated into `Final Year Project`, `Software Projects`, and `Hardware & IoT Projects`, complete with complexity badges and expandable tech stacks.
+- **Experience Timeline:** Showcases real-world industrial experience, including an internship at South East Central Railway (SECR).
 - **Custom Data Visualizations:** Features an animated CSS-based bar chart to map out academic CGPA progression.
 - **Responsive Design:** 100% mobile-friendly with a custom sliding navigation drawer and adaptive grid layouts.
 

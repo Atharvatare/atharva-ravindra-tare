@@ -63,35 +63,6 @@ const Skills: React.FC = () => {
         })}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="glass rounded-3xl p-8 md:p-12"
-      >
-        <div className="flex items-center gap-4 mb-8">
-          <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400">
-            <Award size={24} />
-          </div>
-          <h3 className="text-2xl font-bold text-white">Certifications & Training</h3>
-        </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {certifications.map((cert, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }}
-              className="p-4 rounded-xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition-colors flex items-start gap-3"
-            >
-              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-amber-400 to-amber-600 mt-2 shrink-0" />
-              <span className="text-white/80 font-medium text-sm">{cert}</span>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
     </section>
   );
 };

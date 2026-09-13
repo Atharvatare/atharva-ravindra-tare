@@ -4,7 +4,7 @@
     "shortName": "Atharva Tare",
     "title": "Electrical Engineering Student | Full-Stack Developer | Graphic Designer",
     "roles": ["Electrical Engineer", "Full-Stack Developer", "Graphic Designer", "IoT Innovator"],
-    "summary": "Final Year B.Tech EE @ SBJ Institute of Technology, Nagpur | IEEE Design Head | Freelancer | NSS Coordinator",
+    "summary": "Final Year B.Tech EEE Student @ SBJ Institute of Technology Management and Research, Nagpur | IEEE Design Head | Freelancer | NSS Coordinator",
     "location": "Nagpur, Maharashtra",
     "email": "atharvatare3005@gmail.com",
     "phone": "8010392112",
@@ -23,36 +23,14 @@
   },
   "experience": [
     {
-      "company": "EV Power Train Architect: Design & Simulation",
-      "role": "Virtual Internship",
-      "dates": "Oct – Dec 2025",
-      "location": "Virtual",
-      "bullets": [
-        "Focused on architectural modeling and simulation of electric vehicle drive systems.",
-        "Designed and analyzed power train topologies using MATLAB/Simulink.",
-        "Studied regenerative braking systems and battery management for EVs."
-      ]
-    },
-    {
-      "company": "Networking Virtual Internship",
-      "role": "Virtual Internship",
-      "dates": "April – June 2025",
-      "location": "Virtual",
-      "bullets": [
-        "Completed hands-on training in computer networking fundamentals.",
-        "Configured network protocols, routing, and switching architectures.",
-        "Gained proficiency in network security and troubleshooting."
-      ]
-    },
-    {
-      "company": "S2P Edutech",
-      "role": "Digital Marketing Intern",
-      "dates": "June – Aug 2024",
+      "company": "South East Central Railway (SECR)",
+      "role": "Electrical Engineering Intern",
+      "dates": "Recent",
       "location": "Nagpur, India",
       "bullets": [
-        "Developed and executed social media marketing campaigns.",
-        "Created engaging content for multiple digital platforms.",
-        "Analyzed campaign metrics to optimize reach and engagement."
+        "Completed an industrial internship under the guidance of the Senior Section Engineer and Senior Section Electrical Engineer.",
+        "Gained practical exposure to real-world electrical systems, substations, transformers, and industrial maintenance practices.",
+        "LinkedIn: https://www.linkedin.com/in/atharva-tare-68331028b"
       ]
     }
   ],
@@ -152,6 +130,21 @@
           "Implemented responsive design for all screen sizes.",
           "Added form validation and interactive UI elements."
         ]
+      }
+    ],
+    "finalYear": [
+      {
+        "title": "Development of a Laboratory Prototype of PID-Based Ball and Beam Balancing System for Educational Purpose",
+        "description": "A comprehensive final year project focused on designing and building a PID-based control system for educational demonstrations of balancing dynamics.",
+        "tech": ["PID Controller", "Sensors", "Actuators", "Control Systems", "LabVIEW/MATLAB"],
+        "category": "hardware",
+        "complexity": "advanced",
+        "bullets": [
+          "Developed a laboratory prototype of a Ball and Beam Balancing System to demonstrate PID control principles.",
+          "Designed the mechanical structure and integrated sensors and actuators for real-time feedback and control.",
+          "Implemented tuning algorithms for the PID controller to achieve stable and rapid balancing."
+        ],
+        "components": ["Beam", "Servo Motor", "Distance Sensor", "Microcontroller", "PID Controller Module"]
       }
     ],
     "hardware": [
@@ -290,6 +283,13 @@
       "Digital Marketing"
     ]
   },
+  "focusAreas": [
+    "Renewable Energy (Solar)",
+    "Power Systems & Distribution",
+    "Electrical Design & Maintenance",
+    "IoT Systems & Automation",
+    "Full-Stack Web Development"
+  ],
   "certifications": [
     "GenAI Prompt Engineering",
     "MS & LinkedIn GenAI Skills",

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Home, Briefcase, Award, Code, User, GraduationCap, Github, BookOpen, Send } from 'lucide-react';
+import { Menu, X, Home, Briefcase, Award, Code, User, GraduationCap, Github, BookOpen, Send, Target } from 'lucide-react';
 
 const navItems = [
   { label: 'Home', href: '#home', icon: Home },
+  { label: 'Focus', href: '#focus-areas', icon: Target },
+  { label: 'Experience', href: '#experience', icon: Briefcase },
   { label: 'Achievements', href: '#achievements', icon: Award },
   { label: 'Projects', href: '#projects', icon: Code },
   { label: 'Skills', href: '#skills', icon: User },
   { label: 'Education', href: '#education', icon: GraduationCap },
-  { label: 'Blog', href: '#blog', icon: BookOpen },
   { label: 'Contact', href: '#contact', icon: Send },
 ];
 
