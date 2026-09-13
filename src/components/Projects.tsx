@@ -60,7 +60,7 @@ const categoryColor: Record<string, string> = {
   iot: '#22c55e',
 };
 
-const categoryIcon: Record<string, React.ElementType> = {
+const categoryIcon: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   software: Code2,
   hardware: Cpu,
   iot: Wifi,
@@ -72,13 +72,13 @@ const complexityStyle: Record<string, { label: string; color: string }> = {
   advanced: { label: 'Advanced', color: 'text-rose-400 border-rose-400/30 bg-rose-400/10' },
 };
 
-const leadershipIcons: Record<string, React.ElementType> = {
+const leadershipIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Secretary: UserCheck,
   Coordinator: ShieldCheck,
   Member: Users,
 };
 
-function getLeadershipIcon(role: string): React.ElementType {
+function getLeadershipIcon(role: string): React.ComponentType<{ size?: number; className?: string }> {
   for (const [key, Icon] of Object.entries(leadershipIcons)) {
     if (role.includes(key)) return Icon;
   }
