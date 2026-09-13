@@ -310,13 +310,8 @@
       "type": "wins"
     },
     {
-      "title": "Technical Speaker: Advantage Vidarbha 2026",
-      "description": "Presented technical projects and research at the prestigious Advantage Vidarbha 2026 conference.",
-      "type": "leadership"
-    },
-    {
-      "title": "IQAC Student Representative",
-      "description": "Selected as Electrical Engineering (V Semester) student representative on the college's Internal Quality Assurance Cell.",
+      "title": "Project Presenter: Advantage Vidarbha 2026, Nagpur",
+      "description": "Selected as a college representative to present projects at Advantage Vidarbha 2026, Nagpur. Presented the Smart IV Drip Monitoring System and Substation Surveillance Robot to a large audience of industry professionals and students.",
       "type": "leadership"
     }
   ],
@@ -333,10 +328,10 @@
     },
     "others": [
       "Class Representative: Electrical Engineering",
+      "Member: IEEE Student Chapter",
       "Secretary: ELAN Department Forum",
       "Coordinator: National Service Scheme (NSS)",
-      "Member: Institution of Engineers India (IEI) Student Chapter",
-      "IQAC Student Representative: EE Dept."
+      "Member: Institution of Engineers India (IEI) Student Chapter"
     ]
   },
   "blog": [

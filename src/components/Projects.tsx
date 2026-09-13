@@ -269,21 +269,6 @@ const Projects: React.FC = () => {
         </div>
       )}
 
-      {/* ── Software Projects ─────────────────────────────────────── */}
-      {softwareProjects.length > 0 && (
-        <div className="space-y-8">
-          <h3 className="text-3xl font-bold text-white flex items-center gap-3">
-            <Code2 className="text-sky-400" size={32} />
-            Software Projects
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {softwareProjects.map((project) => (
-              <ProjectCard key={`software-${project.title}`} project={project} expandedId={expandedId} setExpandedId={setExpandedId} />
-            ))}
-          </div>
-        </div>
-      )}
-
       {/* ── Hardware Projects ─────────────────────────────────────── */}
       {hardwareProjects.length > 0 && (
         <div className="space-y-8">
@@ -294,6 +279,21 @@ const Projects: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {hardwareProjects.map((project) => (
               <ProjectCard key={`hardware-${project.title}`} project={project} expandedId={expandedId} setExpandedId={setExpandedId} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* ── Software Projects ─────────────────────────────────────── */}
+      {softwareProjects.length > 0 && (
+        <div className="space-y-8">
+          <h3 className="text-3xl font-bold text-white flex items-center gap-3">
+            <Code2 className="text-sky-400" size={32} />
+            Software Projects
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {softwareProjects.map((project) => (
+              <ProjectCard key={`software-${project.title}`} project={project} expandedId={expandedId} setExpandedId={setExpandedId} />
             ))}
           </div>
         </div>
