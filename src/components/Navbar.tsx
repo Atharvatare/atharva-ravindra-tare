@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Home, Briefcase, Award, Code, User, GraduationCap, Github, BookOpen, Send, Target } from 'lucide-react';
+import { Menu, X, Home, Briefcase, Award, Code, User, GraduationCap, Github, Send, Target, Users } from 'lucide-react';
 
 const navItems = [
   { label: 'Home', href: '#home', icon: Home },
@@ -10,6 +10,7 @@ const navItems = [
   { label: 'Projects', href: '#projects', icon: Code },
   { label: 'Skills', href: '#skills', icon: User },
   { label: 'Education', href: '#education', icon: GraduationCap },
+  { label: 'Leadership', href: '#leadership', icon: Users },
   { label: 'Contact', href: '#contact', icon: Send },
 ];
 

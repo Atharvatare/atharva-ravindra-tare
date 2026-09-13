@@ -320,13 +320,25 @@
       "type": "leadership"
     }
   ],
-  "leadership": [
-    "Class Representative: Electrical Engineering",
-    "Graphic & Design Head: IEEE S. B. Jain Student Branch",
-    "Secretary: ELAN Department Forum",
-    "Coordinator: National Service Scheme (NSS)",
-    "Member: Institution of Engineers India (IEI) Student Chapter"
-  ],
+  "leadership": {
+    "featured": {
+      "role": "Graphic & Design Head",
+      "organization": "IEEE S. B. Jain Institute of Technology, Management and Research Student Branch",
+      "bullets": [
+        "Led all visual design initiatives for the IEEE student branch, covering event posters, social media creatives, and promotional material.",
+        "Coordinated with the core committee to plan and execute technical events, workshops, and seminars.",
+        "Mentored junior members in design tools and visual communication best practices.",
+        "Represented the IEEE branch at inter-college technical and cultural events."
+      ]
+    },
+    "others": [
+      "Class Representative: Electrical Engineering",
+      "Secretary: ELAN Department Forum",
+      "Coordinator: National Service Scheme (NSS)",
+      "Member: Institution of Engineers India (IEI) Student Chapter",
+      "IQAC Student Representative: EE Dept."
+    ]
+  },
   "blog": [
     {
       "title": "Architecting EV Power Trains for the Future",
